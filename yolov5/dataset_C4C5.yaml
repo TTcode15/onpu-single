@@ -1,0 +1,5 @@
+train: ./note_dataset/images/train
+val: ./note_dataset/images/val
+
+nc: 2
+names: ['C4', 'C5']

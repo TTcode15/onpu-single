@@ -1,0 +1,41 @@
+
+# Learning parameters
+lr0: 0.01
+lrf: 0.1
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+
+# Loss gain
+box: 0.05
+cls: 0.5
+cls_pw: 1.0
+obj: 1.0
+obj_pw: 1.0
+iou_t: 0.2
+anchor_t: 4.0
+fl_gamma: 0.0
+
+# Color augmentation (視覚ノイズのみ、位置に影響なし)
+hsv_h: 0.005     # 色相の変化をかなり小さく
+hsv_s: 0.3       # 彩度の変化も抑える
+hsv_v: 0.3       # 明るさも控えめに
+
+# Geometric augmentation（位置関係が崩れないよう制限）
+degrees: 2.0     # 回転は小さく
+translate: 0.05  # 平行移動も最小限
+scale: 0.1       # 拡大縮小は±10% 程度
+shear: 0.0
+perspective: 0.0
+
+# Flip（楽譜にとって上下左右反転は意味を持たないので無効）
+flipud: 0.0
+fliplr: 0.0
+
+# Mosaic and Mixup（五線譜付きデータには危険 → 無効）
+mosaic: 0.0
+mixup: 0.0
+copy_paste: 0.0
+
