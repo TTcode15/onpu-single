@@ -1,6 +1,8 @@
 ![音符(C4)](yolov5/note_dataset/images/train/C4_0.png)
+音符(C4)
 ![音符(C5)](yolov5/note_dataset/images/train/C5_19.png)
-This repository contains a YOLOv5 model trained to recognize musical noteheads from sheet music images.
+音符(C5)
+
 YOLOv5を使用し、音符の画像から音名を推測するモデルです。
 現在のモデルは、1オクターブ異なる「ド」の全音符（C4とC5）を識別するよう学習済みです。
 
